@@ -57,13 +57,18 @@ header
     color: #007cc2;
 }
 
-.scroll, .scroll a, .scroll a:visited, .scroll a:active
+a, a:visited
 {
-    color: #808080;
+    color:#007cc2;
 }
 a:hover,a:visited:hover,a:active:hover
 {
-    color: goldenrod!important;
+    color: goldenrod;
+}
+
+.scroll, .scroll a, .scroll a:visited, .scroll a:active
+{
+    color: #808080;
 }
 
 
@@ -276,6 +281,18 @@ section, footer
     padding:2.5em 4em 2.5em 4em;
 }
 
+section h1
+{
+    margin-bottom: 1em;
+}
+
+.carousel-caption 
+{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
 .socialButtonsHolder
 {
     display: block;
@@ -356,7 +373,9 @@ footer
 
     section
     {
-        width: 80%;
+        width: 90%;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 
     .scroll, .scroll a, .scroll a:visited, .scroll a:active
@@ -368,5 +387,21 @@ footer
     {
         background-color: black;
         color: white;
+    }
+
+    .carousel
+    {
+        width:100%;
+        margin: 0;
+        left: 0;
+    }
+
+    .carousel-caption
+    {
+        font-size: small;
+    }
+    .carousel-caption h1
+    {
+        font-size: small;
     }
 }

@@ -50,6 +50,9 @@
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+        <!--AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!--Font-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -94,14 +97,14 @@
                 <div class="col-xl-12 d-flex justify-content-center align-items-center">
 
                      <!--About us-->
-                    <section>
+                    <section data-aos="fade-up">
                         <h1>ABOUT US</h1>
 
                         <figure>
                             <img src="images/boberschleisen.png" alt="BBSCH Logo" class="logoImg" />
 
                             <figcaption>
-                                <span style="color:goldenrod">BBSCH</span> - Short of Beaverschleisen is a collective effort of a group of friends from Silesia, Poland that want to make best projects they can using newest technologies.
+                                <span style="color:goldenrod">BBSCH</span> - Short of Beaverschleisen is a collective effort of a group of people from Silesia, Poland that want to make best projects they can using newest technologies.
                             </figcaption>
                         </figure>
 
@@ -109,7 +112,7 @@
                     </section>
 
                      <!--Scroll down arrow-->
-                    <!--<div class="scrollDown scroll">
+                    <div class="scrollDown scroll">
                         <a href="#ourProjects">
                             <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
@@ -124,37 +127,92 @@
                 <div class="col-xl-12 d-flex justify-content-center align-items-center">
 
                      <!--Our Projects-->
-                    <!--<section>
-                        <h1>Our Projects</h1>
+                    <section data-aos="fade-up" style="padding-bottom: 0;">
+                        <h1>OUR PROJECTS:</h1>
 
                         <div id="projectsCarousel" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                               <li data-target="#projectsCarousel" data-slide-to="0" class="active"></li>
                               <li data-target="#projectsCarousel" data-slide-to="1"></li>
                               <li data-target="#projectsCarousel" data-slide-to="2"></li>
+                              <li data-target="#projectsCarousel" data-slide-to="3"></li>
+                              <li data-target="#projectsCarousel" data-slide-to="4"></li>
+                              <li data-target="#projectsCarousel" data-slide-to="5"></li>
                             </ol>
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="d-block w-100" src="..." alt="#PROJECT_NAME#">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>#PROJECT_NAME#</h5>
-                                    <p>#PROJECT_DESCRIPTION#</p>
-                                  </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="..." alt="#PROJECT_NAME#">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>#PROJECT_NAME#</h5>
-                                    <p>#PROJECT_DESCRIPTION#</p>
-                                  </div>
-                              </div>
-                              <div class="carousel-item">
-                                <img class="d-block w-100" src="..." alt="#PROJECT_NAME#">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>#PROJECT_NAME#</h5>
-                                    <p>#PROJECT_DESCRIPTION#</p>
-                                  </div>
-                              </div>
+
+                                <div class="carousel-item active">
+                                    <a href="https://www.mitchel.bbsch.pl/naszaporadnia">
+                                        <img class="d-block w-100" src="images/projects/naszaporadnia.jpg" alt="Nasza Poradnia Webpage">
+                                    </a>
+
+                                    <div class="carousel-caption">
+                                        <h5>Nasza Poradnia Webpage</h5>
+                                        <p>Webpage designed and created by: <a href="https://www.mitchel.bbsch.pl/">Michał Myszor</a> for Nasza Poradnia Company.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <a href="https://www.mitchel.bbsch.pl/dots">
+                                        <img class="d-block w-100" src="images/projects/dots.jpg" alt="Connecting Dots Visualizer">
+                                    </a>
+                                   
+                                    <div class="carousel-caption">
+                                        <h5>Connecting Dots Visualizer</h5>
+                                        <p>Created by: <a href="https://www.mitchel.bbsch.pl/">Michał Myszor</a>.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <a href="https://www.mitchel.bbsch.pl/asciiart">
+                                        <img class="d-block w-100" src="images/projects/asciiart.jpg" alt="ASCII Art Generator">
+                                    </a>
+                                    <div class="carousel-caption">
+                                        <h5>ASCII Art Generator</h5>
+                                        <p>Created by: <a href="https://www.mitchel.bbsch.pl/">Michał Myszor</a>.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <a href="https://www.mitchel.bbsch.pl/asciibar">
+                                        <img class="d-block w-100" src="images/projects/asciibar.jpg" alt="ASCII Progress Bar Generator">
+                                    </a>
+                                    <div class="carousel-caption">
+                                        <h5>ASCII Progress Bar Generator</h5>
+                                        <p>Created by: <a href="https://www.mitchel.bbsch.pl/">Michał Myszor</a>.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <a href="https://www.mitchel.bbsch.pl/noise">
+                                        <img class="d-block w-100" src="images/projects/noise.jpg" alt="Perlin Noise Generator">
+                                    </a>
+                                    <div class="carousel-caption">
+                                        <h5>Perlin Noise Generator</h5>
+                                        <p>Created by: <a href="https://www.mitchel.bbsch.pl/">Michał Myszor</a>.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <a href="https://www.mitchel.bbsch.pl/hierarchytree">
+                                        <img class="d-block w-100" src="images/projects/hierarchytree.jpg" alt="Hierarchy Tree Generator">
+                                    </a>
+                                    <div class="carousel-caption">
+                                        <h5>Hierarchy Tree Generator</h5>
+                                        <p>Hierarchy visualizer by: <a href="https://www.mitchel.bbsch.pl/">Michał Myszor</a>.</p>
+                                    </div>
+                                </div>
+
+                                <!--<div class="carousel-item">
+                                    <a href="#">
+                                        <img class="d-block w-100" src="..." alt="#PROJECT_NAME#">
+                                    </a>
+                                    <div class="carousel-caption">
+                                        <h5>#PROJECT_NAME#</h5>
+                                        <p>#PROJECT_DESCRIPTION#</p>
+                                    </div>
+                                </div>-->
+
                             </div>
                             <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -165,7 +223,7 @@
                               <span class="sr-only">Next</span>
                             </a>
                           </div>
-                    </section>-->
+                    </section>
 
                      <!--Scroll down arrow-->
                     <div class="scrollDown scroll">
@@ -183,7 +241,7 @@
                 <div class="col-xl-12 d-flex justify-content-center align-items-center">
 
                      <!--Members-->
-                    <section>
+                    <section data-aos="fade-up">
                         <h1>MEMBERS:</h1>
 
                         <article>
@@ -299,7 +357,7 @@
                 <div class="col-xl-12 d-flex justify-content-center">
 
                      <!--Scroll top arrow-->
-                     <div class="scroll">
+                     <div class="d-flex scroll justify-content-center">
                         <a href="#top" id="scrollToTop">
                             <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-up" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
@@ -334,7 +392,14 @@
         <!--Bootstrap import-->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
+        <!--Other-->
         <script src="scripts/scrollToTop.js"></script>
 
     </body>
