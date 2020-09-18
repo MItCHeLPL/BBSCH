@@ -300,6 +300,11 @@ section, footer
     -webkit-filter:invert(0%);
 }
 
+#members
+{
+    margin-bottom: 8em;
+}
+
 footer
 {
     text-align: center;
