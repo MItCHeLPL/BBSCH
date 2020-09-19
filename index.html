@@ -68,22 +68,23 @@
         <!--Background-->
         <div class="align-items-center justify-content-center">
             <img src="images/background.jpg" alt="background" class="backgroundImage" />
+            <div class="mask mobile-only"></div>
         </div>
 
         <!--Content-->
         <div class="container-fluid h-100">
 
             <!--Row-->
-            <div class="row justify-content-center d-flex h-100 no-gutters" id="top">
+            <div class="row justify-content-center d-flex min-vh-100 no-gutters" id="top">
                  <!--Column-->
-                <div class="col-xl-12 d-flex justify-content-center align-items-center">
+                <div class="col-12 d-flex justify-content-center align-items-center">
 
-                     <!--Main text-->
+                    <!--Main text-->
                     <header>
                         <span class="firstLastLetter">B</span>BSC<span class="firstLastLetter">H</span>
                     </header>
 
-                     <!--Scroll down arrow-->
+                    <!--Scroll down arrow-->
                     <div class="scrollDown scroll">
                         <a href="#aboutUs"><svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-arrow-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
@@ -93,8 +94,8 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center d-flex h-100 no-gutters" id="aboutUs">
-                <div class="col-xl-12 d-flex justify-content-center align-items-center">
+            <div class="row justify-content-center d-flex min-vh-100 no-gutters" id="aboutUs">
+                <div class="col-12 d-flex justify-content-center align-items-center">
 
                      <!--About us-->
                     <section data-aos="fade-up">
@@ -107,8 +108,6 @@
                                 <span style="color:goldenrod">BBSCH</span> - Short of Beaverschleisen is a collective effort of a group of people from Silesia, Poland that want to make best projects they can using newest technologies.
                             </figcaption>
                         </figure>
-
-                        
                     </section>
 
                      <!--Scroll down arrow-->
@@ -123,8 +122,8 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center d-flex h-100 no-gutters" id="ourProjects">
-                <div class="col-xl-12 d-flex justify-content-center align-items-center">
+            <div class="row justify-content-center d-flex min-vh-100 no-gutters" id="ourProjects">
+                <div class="col-12 d-flex justify-content-center align-items-center">
 
                      <!--Our Projects-->
                     <section data-aos="fade-up" style="padding-bottom: 0;">
@@ -237,11 +236,11 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center d-flex h-100 no-gutters" id="members">
-                <div class="col-xl-12 d-flex justify-content-center align-items-center">
+            <div class="row justify-content-center d-flex min-vh-100 no-gutters" id="members">
+                <div class="col-12 d-flex justify-content-center align-items-center">
 
                      <!--Members-->
-                    <section data-aos="fade-up">
+                    <section data-aos="fade-up" class="disable-arrowFix">
                         <h1>MEMBERS:</h1>
 
                         <article>
@@ -251,13 +250,8 @@
                             <span class="socialButtonsHolder d-flex justify-content-center">
 
                                 <!--Portfolio-->
-                                <a href="https://mitchel.bbsch.pl/" title="Portfolio" class="socialButton" style="color:black;">
-                                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-info-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                        <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
-                                        <circle cx="8" cy="4.5" r="1"/>
-                                    </svg>
+                                <a href="https://mitchel.bbsch.pl/">
+                                    <img src="images/social/site_black.svg" alt="Portfolio" title="Portfolio" class="socialButton" onmouseover="this.src='images/social/site.svg';" onmouseout="this.src='images/social/site_black.svg';" />
                                 </a> 
 
                                 <!--Github-->
@@ -308,13 +302,8 @@
                             <span class="socialButtonsHolder d-flex justify-content-center">
 
                                 <!--Portfolio-->
-                                <!--<a href="https://pejdre.bbsch.pl/" title="Portfolio" class="socialButton" style="color:black;">
-                                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-info-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                        <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
-                                        <circle cx="8" cy="4.5" r="1"/>
-                                    </svg>
+                                <!--<a href="https://pejdre.bbsch.pl/">
+                                    <img src="images/social/site_black.svg" alt="Portfolio" title="Portfolio" class="socialButton" onmouseover="this.src='images/social/site.svg';" onmouseout="this.src='images/social/site_black.svg';" />
                                 </a>--> 
 
                                 <!--Mail-->
@@ -375,13 +364,8 @@
                             <span class="socialButtonsHolder d-flex justify-content-center">
 
                                 <!--Portfolio-->
-                                <!--<a href="https://lantiler.bbsch.pl/" title="Portfolio" class="socialButton" style="color:black;">
-                                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-info-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                        <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
-                                        <circle cx="8" cy="4.5" r="1"/>
-                                    </svg>
+                                <!--<a href="https://lantiler.bbsch.pl/">
+                                    <img src="images/social/site_black.svg" alt="Portfolio" title="Portfolio" class="socialButton" onmouseover="this.src='images/social/site.svg';" onmouseout="this.src='images/social/site_black.svg';" />
                                 </a>--> 
 
                                 <!--Mail-->
@@ -442,13 +426,8 @@
                             <span class="socialButtonsHolder d-flex justify-content-center">-->
 
                                 <!--Portfolio-->
-                                <!--<a href="https://#USER#.bbsch.pl/" title="Portfolio" class="socialButton" style="color:black;">
-                                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-info-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                        <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
-                                        <circle cx="8" cy="4.5" r="1"/>
-                                    </svg>
+                                <!--<a href="https://#USER#.bbsch.pl/">
+                                    <img src="images/social/site_black.svg" alt="Portfolio" title="Portfolio" class="socialButton" onmouseover="this.src='images/social/site.svg';" onmouseout="this.src='images/social/site_black.svg';" />
                                 </a>--> 
 
                                 <!--Mail-->
@@ -505,8 +484,8 @@
                 </div>
             </div>
 
-            <div class="row d-flex no-gutters">
-                <div class="col-xl-12 d-flex justify-content-center">
+            <div class="row d-flex no-gutters min-vh-25">
+                <div class="col-12 d-flex justify-content-center">
 
                      <!--Scroll top arrow-->
                      <div class="d-flex scroll justify-content-center">
@@ -553,6 +532,7 @@
 
         <!--Other-->
         <script src="scripts/scrollToTop.js"></script>
+        <script src="scripts/visibleArrowFix.js"></script>
 
     </body>
 </html>

@@ -66,11 +66,16 @@ a:hover,a:visited:hover,a:active:hover
     color: goldenrod;
 }
 
-.scroll, .scroll a, .scroll a:visited, .scroll a:active
+.scroll, .scroll a, .scroll a:visited, .scroll a:active, .carousel-control-prev, .carousel-control-next
 {
     color: #808080;
+    mix-blend-mode: difference;
 }
-
+.scroll:after, .scroll a:after, .scroll a:visited:after, .scroll a:active:after, .carousel-control-prev:after, .carousel-control-next:after
+{
+    background-color: white;
+    color: #808080;
+}
 
 .logoImg
 {
@@ -109,9 +114,10 @@ footer
     font-size: 14px;
     color: white;
 }
-footer, footer a:visited, footer a:link
+
+.min-vh-25
 {
-    color: white;
+    min-height: 25vh;
 }
 
 
@@ -153,7 +159,7 @@ footer, footer a:visited, footer a:link
         -webkit-filter: brightness(75%) grayscale(100%);
         filter: brightness(75%) grayscale(100%);
 
-        height:100vh;
+        height:95vh;
         width:auto;
     }
 }
@@ -227,7 +233,7 @@ body
     height:75%;
     width:auto;
 
-    z-index: -1;
+    z-index: -2;
 
     animation-name: OnEnterBackground;
     animation-duration: 2s;
@@ -237,6 +243,31 @@ body
 
     filter: brightness(75%) grayscale(100%);
     -webkit-filter: brightness(75%) grayscale(100%);
+}
+
+.mask
+{
+
+    display: block;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: -1;
+
+    margin:0;
+    padding:0;
+    clear: both;
+
+    position: fixed;
+    top:0;
+    left:0;
+
+    border: 5vw solid white;
+}
+
+.mobile-only
+{
+    display: none;
 }
 
 /*Bootstrap containers*/
@@ -261,6 +292,7 @@ body
 
 header
 {
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -269,16 +301,21 @@ header
     animation: OnEnterContent 5s, ScrollDown infinite 1.5s;
     -webkit-animation: OnEnterContent 5s, ScrollDown infinite 1.5s;
 
-    position: absolute;
     margin: 0 auto;
 
-    bottom: 6%;
+    position: absolute;
+
+    bottom: 4em;
 }
 
 section, footer
 {
     width:50%;
     padding:2.5em 4em 2.5em 4em;
+}
+.arrowFix
+{
+    margin-bottom: 7.5em;
 }
 
 section h1
@@ -317,11 +354,6 @@ section h1
     -webkit-filter:invert(0%);
 }
 
-#members
-{
-    margin-bottom: 8em;
-}
-
 footer
 {
     text-align: center;
@@ -347,16 +379,9 @@ footer
 /*Mobile*/
 @media only screen and (max-width: 1199px) 
 {
-    /* Track */
-    ::-webkit-scrollbar-track 
+    .mobile-only
     {
-        background: rgba(0,0,0,255);
-    }
-    
-    /* Handle */
-    ::-webkit-scrollbar-thumb 
-    {
-        background: white;
+        display: block;
     }
 
     .backgroundImage
@@ -367,26 +392,20 @@ footer
         -webkit-animation-name: OnEnterBackgroundMobile;
         -webkit-animation-duration: 2s;
 
-        height: 100vh;
+        height: 95vh;
         width: auto;
     }
 
-    section
+    section, footer
     {
         width: 90%;
         padding-left: 1em;
         padding-right: 1em;
     }
 
-    .scroll, .scroll a, .scroll a:visited, .scroll a:active
+    .socialButton
     {
-        color: white;
-        mix-blend-mode: difference;
-    }
-    .scroll:after, .scroll a:after, .scroll a:visited:after, .scroll a:active:after
-    {
-        background-color: black;
-        color: white;
+        width:1em;
     }
 
     .carousel
