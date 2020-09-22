@@ -465,3 +465,21 @@ footer
         font-size: small;
     }
 }
+
+@media (prefers-color-scheme: dark) 
+{
+    ::-webkit-scrollbar-thumb 
+    {
+        background: rgb(201, 201, 201);
+    }
+
+    body
+    {
+        background-color: #111111;
+    }
+
+    .mask
+    {
+        border-color: #111111;
+    }
+}
